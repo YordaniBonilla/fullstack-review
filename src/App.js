@@ -16,7 +16,7 @@ function App() {
             <img src={logo} width="30" height="30" alt="Learning to coooode" />
           </a>
           <Link to="/" className="navbar-brand">Mern-Stack Todo App</Link>
-          <div className="collapse nav-collapse">
+          <div className="collpase nav-collapse">
             <ul className="navbar-nav mr-auto">
               <li className="navbar-item">
                 <Link to="/" className="nav-link">Todos</Link>
@@ -28,7 +28,7 @@ function App() {
           </div>      
         </nav>
 
-        <Route path="/" exact component={ TodosList }/>
+        <Route exact path="/" component={ TodosList }/>
         <Route path="/edit/:id" component={ EditTodo }/>
         <Route path="/create" component={ CreateTodo }/>
       </div>
@@ -36,5 +36,5 @@ function App() {
     </Router>
   );
 }
-
+ 
 export default App;
